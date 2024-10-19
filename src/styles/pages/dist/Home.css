@@ -1,0 +1,96 @@
+.ads {
+  position: relative;
+  padding: 0 104px;
+}
+.ads .flex {
+  display: flex;
+  align-items: center;
+}
+.ads-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #0F0F10;
+  margin-bottom: 28px;
+}
+.ads-top .ads-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.ads-top .ads-title span {
+  font-weight: 400;
+  margin-right: 8px;
+}
+.ads-top .ads-btn {
+  border: none;
+  background-color: #F7F7F7;
+}
+.ads-top .recent-search {
+  color: #007AFF;
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  border-left: 2px solid #DCDDE0;
+}
+.ads-top .recent-search img {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+.ads-top .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  margin: 0 24px;
+}
+.ads-top .ads-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 296px;
+  height: 56px;
+  border-radius: 14px;
+  padding: 0 32px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #0F0F10;
+}
+.ads .sidebar {
+  position: fixed;
+  width: 296px;
+  overflow-x: hidden;
+}
+.ads .sidebar .filter {
+  padding: 24px;
+  box-shadow: 0px 6px 10px 0px #0000000A;
+  border-radius: 18px;
+}
+.ads .sidebar .filter .filter-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.ads .sidebar .filter h1 {
+  font-size: 16px;
+}
+.ads .sidebar .filter .discard-btn {
+  font-size: 14px;
+  color: #EF3838;
+}
+.ads .sidebar .filter .selected-filter button {
+  background-color: #E6F2FF;
+  color: #007AFF;
+  border: 1px solid #007AFF;
+  border-radius: 26px;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.ads .sidebar .filter .selected-filter button img {
+  margin-right: 16px;
+}

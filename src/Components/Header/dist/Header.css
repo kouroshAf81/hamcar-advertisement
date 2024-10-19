@@ -1,0 +1,85 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px;
+  font-size: 20px;
+  font-weight: 500;
+  border-bottom: 2px solid #F0EFEF;
+}
+.header .logo {
+  margin-left: 56px;
+}
+.header nav {
+  display: flex;
+  align-items: center;
+}
+.header nav li {
+  padding: 0 24px;
+  color: #0F0F10;
+}
+.header nav .theme {
+  border-left: 2px solid #DCDDE0;
+  padding: 0 28px 0 40px;
+  height: fit-content;
+}
+.header nav .theme .theme-btn {
+  width: 48px;
+  height: 24px;
+  background: #F0EFEF;
+  border-radius: 56px;
+  padding: 2px;
+}
+.header nav .theme .theme-btn button {
+  border: none;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header nav .search-box {
+  display: flex;
+  align-items: center;
+  height: 36px;
+  margin: 0 40px 0;
+}
+.header nav .search-box img {
+  margin-left: 16px;
+  width: 24px;
+  height: 24px;
+}
+.header nav .search-box input {
+  border: none;
+  outline: none;
+  height: 100%;
+  margin-top: 2px;
+  font-size: 20px;
+}
+.header nav .search-box input::placeholder {
+  font-size: 20px;
+  color: #ABADB2;
+  font-weight: 500;
+}
+.header .user-action {
+  display: flex;
+  align-items: center;
+}
+.header .user-action .login-signup-btn {
+  margin-left: 48px;
+}
+.header .user-action .add-ads-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007AFF;
+  color: #fff;
+  font-weight: 300;
+  width: 192px;
+  height: 56px;
+  gap: 10px;
+  border-radius: 14px;
+  opacity: 0px;
+}

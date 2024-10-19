@@ -1,0 +1,27 @@
+@use '../../styles/variables.scss' as *;
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 16px 104px 53px 0;
+    color: $color-dark;
+
+    a {
+        font-weight: 500;
+
+        &.current-page {
+            color: $color-gray;
+        }
+    }
+
+    .home-icon {
+        font-size: 12px;
+        margin-left: 7px;
+    }
+
+    .separator {
+        margin: 0 16px;
+    }
+
+}
