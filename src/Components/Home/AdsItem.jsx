@@ -1,6 +1,6 @@
 // images
 import Image from 'next/image'
-import ShopIcon from '@/assets/images/svg/shop.svg'
+import ShopIcon from '@/assets/images/svg/store.svg'
 import LocationIcon from '@/assets/images/svg/location.svg'
 import CameraIcon from '@/assets/images/svg/camera.svg'
 
