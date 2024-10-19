@@ -4,9 +4,9 @@ import Image from 'next/image'
 import AmicoLogo from '../../assets/images/amico.png'
 import ArrowLeft from '../../assets/images/svg/arrow-left-blue.svg'
 import Ascending from '../../assets/images/ascending.png'
-import Decending from '../../assets/images/Decending.png'
+import Decending from '../../assets/images/decending.png'
 import AscendingIcon from '../../assets/images/svg/ascending.svg'
-import DecendingIcon from '../../assets/images/svg/Decending.svg'
+import DecendingIcon from '../../assets/images/svg/decending.svg'
 
 const CurrentPrice = () => {
     return (
