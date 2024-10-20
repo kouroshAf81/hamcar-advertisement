@@ -94,8 +94,19 @@ header .user-action .add-ads-btn {
 
 @media (max-width: 1399px) {
   header {
-    border-bottom: 1px solid #F0EFEF;
     padding: 12px 26px;
+  }
+  header .logo {
+    margin-left: 18px;
+  }
+  header nav li {
+    padding: 0 8px;
+    color: #0F0F10;
+  }
+}
+@media (max-width: 1233px) {
+  header {
+    border-bottom: 1px solid #F0EFEF;
   }
   header .mobile-logo {
     display: flex;
