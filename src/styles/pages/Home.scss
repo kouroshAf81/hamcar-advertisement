@@ -8,6 +8,16 @@
         align-items: center;
     }
 
+    .banner-img {
+        width: 100%;
+        height: 144px;
+        margin-top: 16px;
+    }
+
+    .banner-img-mobile {
+        display: none;
+    }
+
     &-top {
         display: flex;
         justify-content: space-between;
@@ -15,7 +25,12 @@
         color: $color-dark;
         margin-bottom: 12px;
 
-        .ads-title {
+        .ads-title-mobile {
+            display: none;
+        }
+
+        .ads-title,
+        .ads-title-mobile {
             font-size: 20px;
             font-weight: 600;
 
@@ -28,6 +43,10 @@
         .ads-btn {
             border: none;
             background-color: $color-white-smoke
+        }
+
+        .recent-search-mobile {
+            display: none;
         }
 
         .recent-search {
@@ -65,6 +84,11 @@
             font-size: 16px;
             font-weight: 400;
             color: $color-dark;
+
+
+            .ads-order-mobile {
+                display: none;
+            }
         }
     }
 
@@ -247,6 +271,10 @@
     main {
         margin-right: 312px;
 
+        .current-price-mobile {
+            display: none;
+        }
+
         .current-price {
             margin-top: 28px;
             padding: 24px 32px;
@@ -350,6 +378,15 @@
                 border-radius: 18px;
                 position: relative;
                 margin-top: 16px;
+
+                .ads-card-mobile {
+                    display: flex;
+                    width: 100%;
+                }
+
+                .location-mobile {
+                    display: none;
+                }
 
                 .ads-img {
                     position: relative;
@@ -459,36 +496,38 @@
                             margin-bottom: 2px;
                         }
                     }
-                }
 
-                .location {
-                    justify-content: space-between;
+                    .location {
+                        justify-content: space-between;
 
-                    .address {
-                        font-size: 14px;
-                        color: $color-dark;
-                        font-weight: 450;
-                    }
-
-                    .location-icon {
-                        margin: 0 11px 0 8px;
-                    }
-
-                    .price {
-                        justify-content: flex-end;
-                        margin-left: 8px;
-                        color: $color-dark;
-
-                        h1 {
-                            font-size: 20px;
-                            font-weight: 800;
+                        .address {
+                            font-size: 14px;
+                            color: $color-dark;
+                            font-weight: 450;
                         }
 
-                        .currency {
-                            margin-right: 8px;
+                        .location-icon {
+                            margin: 0 11px 0 8px;
+                        }
+
+                        .price {
+                            justify-content: flex-end;
+                            margin-left: 8px;
+                            color: $color-dark;
+
+                            h1 {
+                                font-size: 20px;
+                                font-weight: 800;
+                            }
+
+                            .currency {
+                                margin-right: 8px;
+                            }
                         }
                     }
                 }
+
+
 
                 .hamcar-badge,
                 .verified-badge {
@@ -515,7 +554,366 @@
 }
 
 // responsive
+@media (max-width: 1250px) {
+    .ads {
+        padding: 25px;
+
+        &-top {
+            margin-bottom: 16px;
+
+            .ads-title {
+                display: none;
+            }
+
+            .ads-title-mobile {
+                display: block;
+                font-size: 16px;
+            }
+
+            .recent-search {
+                display: none;
+            }
+
+            .recent-search-mobile {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 10px;
+                background-color: $color-white-smoke;
+            }
+
+            .menu {
+                width: 40px;
+                height: 40px;
+                margin: 0 8px;
+
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+            }
+
+            .ads-order {
+                width: 88px;
+                height: 40px;
+                font-size: 13px;
+                padding: 12px 8px;
+
+                span:first-child {
+                    display: none;
+                }
+
+                .ads-order-mobile {
+                    display: block;
+                }
+
+                img {
+                    width: 10px;
+                    height: 5px;
+                }
+            }
+        }
+
+        main {
+            margin-right: 0;
+        }
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    // sidbar active
+
+    // .sidebar {
+    //     position: fixed;
+    //     top: 0;
+    //     right: 0;
+    //     background-color: #fff;
+    //     z-index: 1000;
+    //     height: 700px;
+    // }
+
+}
 
 @media (max-width: 768px) {
-    
+    .ads {
+        .banner-img {
+            display: none;
+        }
+
+        .banner-img-mobile {
+            display: block;
+            width: 100%;
+            height: 120px;
+            margin-top: 16px;
+        }
+
+        .sidebar {
+            display: none;
+        }
+
+        main {
+
+            .current-price {
+                display: none;
+            }
+
+            .current-price-mobile {
+                padding: 13px;
+                background-color: $color-white-smoke;
+                border-radius: 14px;
+                display: block;
+
+                img {
+                    width: 64px;
+                    height: 21px;
+                    margin: 0 !important;
+                }
+
+                .current-price-title {
+                    align-items: center;
+                }
+
+                .current-price-detail {
+                    font-size: 14px;
+                    margin-top: 16px;
+                    padding: 0 4px;
+
+                    h1 {
+                        display: flex;
+                        font-weight: 800;
+                        align-items: center;
+                    }
+
+                    span {
+                        font-weight: normal;
+                        font-family: 'iran' !important;
+                        font-size: 18px;
+                        margin-right: 4px;
+                    }
+                }
+
+                .product {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 4px;
+
+                    &-item {
+                        display: flex;
+                        align-items: center;
+                        padding: 10px 0;
+                        font-size: 12px;
+
+                        .product-year {
+                            position: relative;
+                            margin-left: 8px;
+                            padding-left: 8px;
+                        }
+
+                        // border left
+                        .product-year:after {
+                            content: '';
+                            height: 60%;
+                            width: 1px;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            background-color: $color-border;
+                        }
+                    }
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .ascending {
+                        justify-content: flex-end;
+                        color: #02C7BE;
+                        font-size: 14px;
+
+                        img {
+                            width: 14px;
+                            height: 14px;
+                            margin-right: 6px !important;
+                        }
+                    }
+                }
+
+                .upload-date {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    color: #85858F;
+                    font-size: 14px;
+                    padding: 0 4px;
+                }
+
+                .more {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 25px;
+                    cursor: pointer;
+
+                    img {
+                        width: 12px;
+                        height: 6px;
+                    }
+                }
+            }
+
+            .ads-item {
+
+                .ads-card {
+                    padding-right: 0;
+                    box-shadow: 0px 8px 12px 0px $color-box-shadow;
+                    display: flex;
+                    flex-direction: column;
+
+                    .ads-img {
+                        height: 101px;
+
+                        .ads-cover {
+                            width: 120px;
+                            height: 100%;
+                            border-radius: 0;
+                            border-top-right-radius: 16px;
+                            border-bottom-left-radius: 16px;
+                        }
+
+                        .img-number {
+                            display: none;
+                        }
+                    }
+
+                    .ads-description {
+                        &>div {
+                            &:not(.location) {
+                                margin-right: 8px;
+                            }
+                        }
+
+                        .ads-detail-title {
+
+                            h1 {
+                                margin-left: 0;
+                                font-size: 15px;
+                            }
+
+                            .upload-date {
+                                background-color: transparent;
+                                color: $color-gray;
+                            }
+                        }
+
+                        .ads-detail {
+
+                            p {
+                                padding-left: 8px;
+                                margin-right: 8px;
+                                font-size: 12px;
+
+                            }
+                        }
+
+                        .seller {
+                            width: 72px;
+                            height: 24px;
+                            margin-top: 7px;
+                            margin-right: 8px !important;
+
+                            img {
+                                width: 12px;
+                                height: 12px;
+                            }
+
+                            span {
+                                font-size: 12px;
+                            }
+                        }
+
+                        .location {
+                            display: none;
+                        }
+                    }
+
+                    .location-mobile {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0 3px 0 16px;
+
+                        img {
+                            margin-left: 4px;
+                            width: 12px;
+                            height: 12px;
+                        }
+
+                        .address {
+                            font-size: 13px;
+                        }
+
+                        .price {
+                            h1 {
+                                font-size: 17px;
+                                font-weight: 800;
+                            }
+
+                            .currency {
+                                margin-right: 8px;
+                            }
+                        }
+
+                    }
+
+                    .hamcar-badge,
+                    .verified-badge {
+                        position: absolute;
+                        top: 12px;
+                        left: 0;
+                    }
+
+                    .hamcar-badge {
+                        width: 12px;
+                        height: 36px;
+                    }
+
+                    .verified-badge {
+                        width: 16px;
+                        height: 16px;
+                        top: 20px;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 375px) {
+    .ads {
+        padding: 7px;
+
+        .ads-item {
+            .ads-card {
+                padding: 8px;
+
+                .ads-detail {
+
+                    p {
+                        padding-left: 4px !important;
+                        margin-right: 4px !important;
+                        font-size: 12px;
+
+                    }
+                }
+            }
+        }
+
+    }
 }

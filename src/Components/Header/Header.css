@@ -92,9 +92,10 @@ header .user-action .add-ads-btn {
   border-radius: 14px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1399px) {
   header {
     border-bottom: 1px solid #F0EFEF;
+    padding: 12px 26px;
   }
   header .mobile-logo {
     display: flex;

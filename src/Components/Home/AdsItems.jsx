@@ -1,3 +1,5 @@
+//Images
+import Image from 'next/image'
 import CarImg1 from '../../assets/images/cars/1.png'
 import CarImg2 from '../../assets/images/cars/2.png'
 import CarImg3 from '../../assets/images/cars/3.png'
@@ -6,8 +8,19 @@ import CarImg5 from '../../assets/images/cars/5.png'
 import CarImg6 from '../../assets/images/cars/6.png'
 import CarImg7 from '../../assets/images/cars/7.png'
 import CarImg8 from '../../assets/images/cars/8.png'
+import Banner from '@/assets/images/banner.png'
+import BannerMobile from '@/assets/images/banner-mobile.png'
+// Components
 import AdsItem from './AdsItem'
 
+const AdBanner = () => {
+    return (
+        <>
+            <Image className="banner-img" src={Banner}></Image>
+            <Image className="banner-img-mobile" src={BannerMobile}></Image>
+        </>
+    )
+}
 const AdsItems = () => {
     const cardItems = [
         {
@@ -110,21 +123,23 @@ const AdsItems = () => {
     return (
         <section className="ads-item">
             {cardItems.map((item, index) => (
-                <AdsItem
-                    key={index}
-                    image={item.image}
-                    name={item.name}
-                    uploadDate={item.uploadDate}
-                    model={item.model}
-                    mileage={item.mileage}
-                    transmission={item.transmission}
-                    seller={item.seller}
-                    location={item.location}
-                    price={item.price}
-                    verifiedBadge={item.verifiedBadge}
-                />
+                <>
+                    <AdsItem
+                        key={index}
+                        image={item.image}
+                        name={item.name}
+                        uploadDate={item.uploadDate}
+                        model={item.model}
+                        mileage={item.mileage}
+                        transmission={item.transmission}
+                        seller={item.seller}
+                        location={item.location}
+                        price={item.price}
+                        verifiedBadge={item.verifiedBadge}
+                    />
+                    {index === 3 && <AdBanner />}
+                </>
             ))}
-            
         </section>
     )
 }

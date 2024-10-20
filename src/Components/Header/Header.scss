@@ -115,11 +115,11 @@ header {
 
 // responsive
 
-@media (max-width: 768px) {
+@media (max-width: 1399px) {
 
     header {
         border-bottom: 1px solid $color-light-gray;
-
+        padding: 12px 26px;
         .mobile-logo {
             display: flex;
         }

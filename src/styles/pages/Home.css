@@ -5,6 +5,14 @@
   display: flex;
   align-items: center;
 }
+.ads .banner-img {
+  width: 100%;
+  height: 144px;
+  margin-top: 16px;
+}
+.ads .banner-img-mobile {
+  display: none;
+}
 .ads-top {
   display: flex;
   justify-content: space-between;
@@ -12,17 +20,25 @@
   color: #0F0F10;
   margin-bottom: 12px;
 }
-.ads-top .ads-title {
+.ads-top .ads-title-mobile {
+  display: none;
+}
+.ads-top .ads-title,
+.ads-top .ads-title-mobile {
   font-size: 20px;
   font-weight: 600;
 }
-.ads-top .ads-title span {
+.ads-top .ads-title span,
+.ads-top .ads-title-mobile span {
   font-weight: 400;
   margin-right: 8px;
 }
 .ads-top .ads-btn {
   border: none;
   background-color: #F7F7F7;
+}
+.ads-top .recent-search-mobile {
+  display: none;
 }
 .ads-top .recent-search {
   color: #007AFF;
@@ -56,6 +72,9 @@
   font-size: 16px;
   font-weight: 400;
   color: #0F0F10;
+}
+.ads-top .ads-order .ads-order-mobile {
+  display: none;
 }
 .ads .sidebar {
   position: absolute;
@@ -189,6 +208,9 @@
 .ads main {
   margin-right: 312px;
 }
+.ads main .current-price-mobile {
+  display: none;
+}
 .ads main .current-price {
   margin-top: 28px;
   padding: 24px 32px;
@@ -267,6 +289,13 @@
   border-radius: 18px;
   position: relative;
   margin-top: 16px;
+}
+.ads main .ads-item .ads-card .ads-card-mobile {
+  display: flex;
+  width: 100%;
+}
+.ads main .ads-item .ads-card .location-mobile {
+  display: none;
 }
 .ads main .ads-item .ads-card .ads-img {
   position: relative;
@@ -360,27 +389,27 @@
   margin-left: 8px;
   margin-bottom: 2px;
 }
-.ads main .ads-item .ads-card .location {
+.ads main .ads-item .ads-card .ads-description .location {
   justify-content: space-between;
 }
-.ads main .ads-item .ads-card .location .address {
+.ads main .ads-item .ads-card .ads-description .location .address {
   font-size: 14px;
   color: #0F0F10;
   font-weight: 450;
 }
-.ads main .ads-item .ads-card .location .location-icon {
+.ads main .ads-item .ads-card .ads-description .location .location-icon {
   margin: 0 11px 0 8px;
 }
-.ads main .ads-item .ads-card .location .price {
+.ads main .ads-item .ads-card .ads-description .location .price {
   justify-content: flex-end;
   margin-left: 8px;
   color: #0F0F10;
 }
-.ads main .ads-item .ads-card .location .price h1 {
+.ads main .ads-item .ads-card .ads-description .location .price h1 {
   font-size: 20px;
   font-weight: 800;
 }
-.ads main .ads-item .ads-card .location .price .currency {
+.ads main .ads-item .ads-card .ads-description .location .price .currency {
   margin-right: 8px;
 }
 .ads main .ads-item .ads-card .hamcar-badge,
@@ -398,4 +427,269 @@
   height: 36px;
   top: 46px;
   left: 48px;
+}
+
+@media (max-width: 1250px) {
+  .ads {
+    padding: 25px;
+  }
+  .ads-top {
+    margin-bottom: 16px;
+  }
+  .ads-top .ads-title {
+    display: none;
+  }
+  .ads-top .ads-title-mobile {
+    display: block;
+    font-size: 16px;
+  }
+  .ads-top .recent-search {
+    display: none;
+  }
+  .ads-top .recent-search-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F7F7F7;
+  }
+  .ads-top .menu {
+    width: 40px;
+    height: 40px;
+    margin: 0 8px;
+  }
+  .ads-top .menu img {
+    width: 16px;
+    height: 16px;
+  }
+  .ads-top .ads-order {
+    width: 88px;
+    height: 40px;
+    font-size: 13px;
+    padding: 12px 8px;
+  }
+  .ads-top .ads-order span:first-child {
+    display: none;
+  }
+  .ads-top .ads-order .ads-order-mobile {
+    display: block;
+  }
+  .ads-top .ads-order img {
+    width: 10px;
+    height: 5px;
+  }
+  .ads main {
+    margin-right: 0;
+  }
+  .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .ads .banner-img {
+    display: none;
+  }
+  .ads .banner-img-mobile {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-top: 16px;
+  }
+  .ads .sidebar {
+    display: none;
+  }
+  .ads main .current-price {
+    display: none;
+  }
+  .ads main .current-price-mobile {
+    padding: 13px;
+    background-color: #F7F7F7;
+    border-radius: 14px;
+    display: block;
+  }
+  .ads main .current-price-mobile img {
+    width: 64px;
+    height: 21px;
+    margin: 0 !important;
+  }
+  .ads main .current-price-mobile .current-price-title {
+    align-items: center;
+  }
+  .ads main .current-price-mobile .current-price-detail {
+    font-size: 14px;
+    margin-top: 16px;
+    padding: 0 4px;
+  }
+  .ads main .current-price-mobile .current-price-detail h1 {
+    display: flex;
+    font-weight: 800;
+    align-items: center;
+  }
+  .ads main .current-price-mobile .current-price-detail span {
+    font-weight: normal;
+    font-family: "iran" !important;
+    font-size: 18px;
+    margin-right: 4px;
+  }
+  .ads main .current-price-mobile .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4px;
+  }
+  .ads main .current-price-mobile .product-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 12px;
+  }
+  .ads main .current-price-mobile .product-item .product-year {
+    position: relative;
+    margin-left: 8px;
+    padding-left: 8px;
+  }
+  .ads main .current-price-mobile .product-item .product-year:after {
+    content: "";
+    height: 60%;
+    width: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #DCDDE0;
+  }
+  .ads main .current-price-mobile .product p {
+    display: flex;
+    align-items: center;
+  }
+  .ads main .current-price-mobile .product .ascending {
+    justify-content: flex-end;
+    color: #02C7BE;
+    font-size: 14px;
+  }
+  .ads main .current-price-mobile .product .ascending img {
+    width: 14px;
+    height: 14px;
+    margin-right: 6px !important;
+  }
+  .ads main .current-price-mobile .upload-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #85858F;
+    font-size: 14px;
+    padding: 0 4px;
+  }
+  .ads main .current-price-mobile .more {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    cursor: pointer;
+  }
+  .ads main .current-price-mobile .more img {
+    width: 12px;
+    height: 6px;
+  }
+  .ads main .ads-item .ads-card {
+    padding-right: 0;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.0392156863);
+    display: flex;
+    flex-direction: column;
+  }
+  .ads main .ads-item .ads-card .ads-img {
+    height: 101px;
+  }
+  .ads main .ads-item .ads-card .ads-img .ads-cover {
+    width: 120px;
+    height: 100%;
+    border-radius: 0;
+    border-top-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+  }
+  .ads main .ads-item .ads-card .ads-img .img-number {
+    display: none;
+  }
+  .ads main .ads-item .ads-card .ads-description > div:not(.location) {
+    margin-right: 8px;
+  }
+  .ads main .ads-item .ads-card .ads-description .ads-detail-title h1 {
+    margin-left: 0;
+    font-size: 15px;
+  }
+  .ads main .ads-item .ads-card .ads-description .ads-detail-title .upload-date {
+    background-color: transparent;
+    color: #ABADB2;
+  }
+  .ads main .ads-item .ads-card .ads-description .ads-detail p {
+    padding-left: 8px;
+    margin-right: 8px;
+    font-size: 12px;
+  }
+  .ads main .ads-item .ads-card .ads-description .seller {
+    width: 72px;
+    height: 24px;
+    margin-top: 7px;
+    margin-right: 8px !important;
+  }
+  .ads main .ads-item .ads-card .ads-description .seller img {
+    width: 12px;
+    height: 12px;
+  }
+  .ads main .ads-item .ads-card .ads-description .seller span {
+    font-size: 12px;
+  }
+  .ads main .ads-item .ads-card .ads-description .location {
+    display: none;
+  }
+  .ads main .ads-item .ads-card .location-mobile {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3px 0 16px;
+  }
+  .ads main .ads-item .ads-card .location-mobile img {
+    margin-left: 4px;
+    width: 12px;
+    height: 12px;
+  }
+  .ads main .ads-item .ads-card .location-mobile .address {
+    font-size: 13px;
+  }
+  .ads main .ads-item .ads-card .location-mobile .price h1 {
+    font-size: 17px;
+    font-weight: 800;
+  }
+  .ads main .ads-item .ads-card .location-mobile .price .currency {
+    margin-right: 8px;
+  }
+  .ads main .ads-item .ads-card .hamcar-badge,
+  .ads main .ads-item .ads-card .verified-badge {
+    position: absolute;
+    top: 12px;
+    left: 0;
+  }
+  .ads main .ads-item .ads-card .hamcar-badge {
+    width: 12px;
+    height: 36px;
+  }
+  .ads main .ads-item .ads-card .verified-badge {
+    width: 16px;
+    height: 16px;
+    top: 20px;
+    left: 20px;
+  }
+}
+@media (max-width: 375px) {
+  .ads {
+    padding: 7px;
+  }
+  .ads .ads-item .ads-card {
+    padding: 8px;
+  }
+  .ads .ads-item .ads-card .ads-detail p {
+    padding-left: 4px !important;
+    margin-right: 4px !important;
+    font-size: 12px;
+  }
 }/*# sourceMappingURL=Home.css.map */

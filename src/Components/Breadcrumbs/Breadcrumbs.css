@@ -17,4 +17,10 @@
 }
 .breadcrumbs .separator {
   margin: 0 16px;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+  }
 }/*# sourceMappingURL=Breadcrumbs.css.map */

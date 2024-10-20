@@ -5,6 +5,7 @@ import AdsTop from '@/Components/Home/AdsTop'
 import Sidebar from '@/Components/Home/Sidebar'
 import CurrentPrice from '@/Components/Home/CurrentPrice'
 import AdsItems from '@/Components/Home/AdsItems'
+import CurrentPriceMobile from '@/Components/Home/CurrentPriceMobile'
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Sidebar />
             <main>
                 <CurrentPrice />
+                <CurrentPriceMobile />
                 <AdsItems />
             </main>
         </div>
